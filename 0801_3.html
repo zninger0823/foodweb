@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>餐饮网站热卖模块</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        /*为页面中以下元素设置字体*/
+        body,h3,h6{font-family: Microsoft YaHei;}
+        /*热卖商品*/
+        .hot h3{
+            margin-top: -20px;
+            color:#1A1A1A;
+            font-size: 1.5em;
+            font-weight: 600;
+            margin: 0 0 1em;
+            padding: 0 0 0.5em;
+            border-bottom: 2px solid #eee;
+        }
+        .hot p{
+            color:#5fa022;
+            font-size: 1em;
+            font-weight: 400;
+            line-height: 1.8em;
+            margin: 1em 0;
+        }
+        .hot{
+            padding: 3em 0;
+            border: 1px solid #eee;
+            margin: 0 0;
+        }
+        .hot h6{
+            color:#C15162;
+            font-size: 1.5em;
+            font-weight: 400;
+            margin: 0.3em 0;
+        }
+        a.morebtn{
+            display: block;
+            font-size: 1em;
+            color:#FFF;
+            text-decoration: none;  /*去除下划线*/
+            font-weight: 400;
+            background: #D96B66;
+            padding: 10px 18px;
+            transition: 0.5s all ease;
+            -webkit-transition: 0.5s all ease;
+            border-radius: 3px;
+            -weblit-border-radius:3px;
+        }
+        a.morebtn:hover{
+            background:#5fa022;
+        }
+        @media(max-width:1024px)
+{
+    a.morebtn{
+        max-width:410px;/*当窗口小于1024时按钮的最大宽度*/
+    }
+}
+
+    </style>
+
+
+
+
+</head>
+<body>
+   <!--热卖商品-->
+   <div class="hot">
+    <div class="container">
+        <div class="col-md-4">
+            <h3>米西奈斯煎饼</h3>
+            <img src="images/4.jpg" class="img-responsive" alt="">
+            <div>
+                <p class="glyphicon glyphicon-thumbs-up">两种口味可供选择</p>
+                <div class="cur">
+                    <span><a class="morebtn" href="#">添加到购物车</a></span>
+                    <span><h6>一口价：￥45.00</h6></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"><h3>蒙特斯大虾</h3>
+        <img src="images/1.jpg" class="img-responsive" alt="蒙特斯大虾">
+            <div>
+                <p class="glyphicon glyphicon-thumbs-up">两种口味可供选择</p>
+                <div class="cur">
+                    <span><a class="morebtn" href="#">添加到购物车</a></span>
+                    <span><h6>一口价：￥55.00</h6></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h3>香酥鸡排</h3>
+            <img src="images/3.jpg" class="img-responsive" alt="香酥鸡排">
+                <div>
+                        <p class="glyphicon glyphicon-thumbs-up">两种口味可供选择</p>
+                        <div class="cur">
+                            <span><a class="morebtn" href="#">添加到购物车</a></span>
+                            <span><h6>一口价：￥65.00</h6></span>
+                        </div>
+                </div>        
+        </div>
+    </div>
+
+
+   </div>
+    
+
+
+    <script src="jquery/jquery-1.12.4.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

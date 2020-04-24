@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>餐饮网站特色推荐模块</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+ /*为页面中以下元素设置字体*/
+ body{font-family: Microsoft YaHei;}
+/*特色推荐*/
+/*设置左上角图片位置和宽高*/
+.navbar-brand>img{
+    height: auto;
+    width: 250px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+/*设置选项卡菜单的字体颜色*/
+.nav-pills>li>a{
+    color:#8e908d;
+}
+/*设置选项卡菜单鼠标悬停和获取焦点时的背景色和字体颜色*/
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover{
+    color:#fff;
+    background-color: #5A9522;
+}
+    .choose{
+        border:1px solid silver;
+    }
+    /*设置选项卡内容位置*/
+    .tab-content{
+        margin: 5px;
+        text-align: center;/*居中*/
+    }
+
+
+</style>
+
+</head>
+<body>
+ <!--特色推荐-->
+    <div class="container">
+        <div class="choose">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="navbar-header hidden-xs">
+                        <a class="navbar-brand" href="#"><img src="images/title.jpg" sizes="100px"/></a>
+                    </div>
+                    <!--选项卡菜单-->
+                    <ul class="nav nav-pills navbar-right" role="tablist" style="margin-right: 0px;">
+                        <li role="presentation" class="active"><a href="#dishes" role="tab" data-toggle="tab">菜品</a></li>
+                        <li role="presentation" ><a href="#drink" role="tab" data-toggle="tab">饮品</a></li>
+                        <li role="presentation" ><a href="#staple" role="tab" data-toggle="tab">主食</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tab-content">
+                        <!--菜品-->
+                        <div role="tabpanel" class="tab-pane active" id="dishes">
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <img src="images/products/small01.jpg"/>
+                                <p>菜品</p>
+                                <p>￥：145.0</p>
+                            </div>
+                            <div class="product-item col-md-2 col-sm-4 col-xs-6">
+                                    <img src="images/products/small02.jpg"/>
+                                    <p>菜品</p>
+                                    <p>￥：165.0</p>
+                            </div>
+                            <div class="product-item col-md-2 col-sm-4 col-xs-6">
+                                        <img src="images/products/small04.jpg"/>
+                                        <p>菜品</p>
+                                        <p>￥：165.0</p>
+                            </div> 
+                            <div class="product-item col-md-2 col-sm-4 col-xs-6">
+                                    <img src="images/products/small02.jpg"/>
+                                    <p>菜品</p>
+                                    <p>￥：165.0</p>
+                                </div>
+                             <div class="product-item col-md-2 col-sm-4 col-xs-6">
+                                        <img src="images/products/small07.jpg"/>
+                                        <p>菜品</p>
+                                        <p>￥：145.0</p>
+                            </div>       
+                            <div class="product-item col-md-2 col-sm-4 col-xs-6">
+                                    <img src="images/products/small08.jpg"/>
+                                    <p>菜品</p>
+                                    <p>￥：165.0</p>
+                            </div>
+                        </div>
+                        <!--饮品-->
+                        <div role="tabpanel" class="tab-pane" id="drink">
+                            <div class="product-item col-md-2 col-sm-4 col-xs-6">
+                                <img src="images/products/small03.jpg"/>
+                                <p>饮品</p>
+                                <p>￥：98.0</p>
+                            </div>
+                            <div class="product-item col-md-2 col-sm-4 col-xs-6">
+                                    <img src="images/products/small03.jpg"/>
+                                    <p>饮品</p>
+                                    <p>￥：98.0</p>
+                                </div>
+                        </div>
+                        <!--主食-->
+                        <div role="tabpanel" class="tab-pane" id="staple">
+                            <div class="product-item col-md-2 col-sm-4 col-xs-6">
+                                        <img src="images/products/small05.jpg"/>
+                                        <p>主食</p>
+                                        <p>￥：98.0</p>
+                             </div>    
+                             <div class="product-item col-md-2 col-sm-4 col-xs-6">
+                                    <img src="images/products/small06.jpg"/>
+                                    <p>主食</p>
+                                    <p>￥：98.0</p>
+                                </div>
+                            <div class="product-item col-md-2 col-sm-4 col-xs-6">
+                                        <img src="images/products/small09.jpg"/>
+                                        <p>主食</p>
+                                        <p>￥：98.0</p>
+                            </div>       
+
+                        </div>
+                       
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+<!--特色推荐结束-->
+<!--jQuery(Bootstrap的JavaScript插件需要引入jQuery)-->
+<script src="jquery/jquery-1.12.4.min.js"></script>
+<!--包括所有已编译的插件-->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>餐饮网站搜索区域</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!--引入Bootstrap-->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <style type="text/css">
+        /*为下面字体设置*/
+        body,button,input,select{font-family: Microsoft YaHei;}
+        /*设置搜索区域*/
+        /*设置搜索按钮前面的图标*/
+        .search{
+            background-image: url(images/banner.jpg);
+            background-size: cover;
+            -webkit-background-size:cover;
+            min-height: 600px;
+            margin-top: -20px;
+        }
+        /*设置搜索框外层div样式，形成白色透明背景*/
+        .reservation{
+            padding: 60px 60px;
+            width: 50%;
+            background: rgba(255, 255, 255, 0.7);
+            margin: 0 auto;
+            margin-top: 15%;
+            font-weight: 500;
+            color:#f2f0f1;
+            font-size: 1.2em;
+            outline: none;
+        }
+        /*设置”搜索按钮的样式“*/
+        .btn{
+            width: 50%;
+            background: #D96B66;
+            color: #fff;
+            padding: 5px;
+            border: none;
+            border-radius: 4px;
+            -webkit-border-radius:4px;
+        }
+        .form-control{
+            color: #8e908d;
+        }
+        .searchbtn{
+            text-align: center;
+        }
+        /*媒体查询*/
+        @media (max-width: 768px){
+            .reservation{
+                padding: 20px 20px;
+                width: 90%;
+            }
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+        <!--搜索区域-->
+        <div class="search">
+            <div class="container">
+                <div class="reservation">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <input type="text" class="form-control input-lg"
+                                    id="name" placeholder="请输入餐厅名称">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <select id="country" class="form-control input-lg">
+                                    <option value="null">请选择城市</option>
+                                    <option value="bj">北京</option>
+                                    <option value="sh">上海</option>
+                                    <option value="sz">深圳</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="searchbtn">
+                                    <button type="submit" class="btn btn-success btn-lg">
+                                        <img src="images/search-icon.png">&nbsp;搜索
+                                    </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--搜索区域结束-->
+        <script src="jquery/jquery-1.12.4.min.js"></script>
+
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+
+</html>

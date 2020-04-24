@@ -1,0 +1,221 @@
+  /*设置body元素字体为Microso YaHei*/
+  body,button,input,select,h3,h6{font-family: Microsoft YaHei;}
+  .head-top{
+      background: #5fa022;
+      padding:0.8em 0;
+  }
+  .navbar-brand{
+      padding: 0 0;
+  }
+  /*设置图片logo的大小和位置*/
+  .navbar-brand>img{
+      height: auto;
+      margin-right: 5px;
+      margin-top: 5px;
+      width: 250px;
+  }
+  /*设置整个导航菜单的内边距、背景色和阴影*/
+  .navbar-default{
+      padding: 1.5em 0;
+      background-color:#f2f0f1 ;
+      box-shadow:12px -5px 39px -12px;
+  }
+  /*设置导航栏中菜单a链接的样式*/
+  .navbar-default .navbar-nav>li a{
+      top:10px;
+      padding:0.5em 3em;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.2em;
+      color:#919191;
+  }
+  /*设置导航栏菜单鼠标悬停和获取焦点时的状态*/
+  .navbar-default .navbar-nav>li>a:hover,
+  .navbar-default .navbar-nav>li>a:focus{
+      background: #D96B66;
+      color:white;
+      border-radius: 3px;
+      -webkit-border-radius:3px;
+  }
+  /*设置导航栏右侧a链接（0.00）的颜色*/
+  .navbar-right>a{
+      color:#D96B66;
+
+  }
+  /*媒体查询：当视口小于970px时，导航菜单字体变小，避免了换行的问题*/
+  @media (max-width:970px){
+      .navbar-default .navbar-nav>li a{
+          font-size: 1.1em;
+      }
+  }    
+  /*header部分结束*/
+  /*搜索模块*/
+  /*设置搜索按钮前面的搜索图标*/
+  .search{
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    -webkit-background-size:cover;
+    min-height: 600px;
+    margin-top: -20px;
+}
+/*设置搜索框外层div样式，形成白色透明背景*/
+.reservation{
+    padding: 60px 60px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    margin: 0 auto;
+    margin-top: 15%;
+    font-weight: 500;
+    color:#f2f0f1;
+    font-size: 1.2em;
+    outline: none;
+}
+/*设置”搜索按钮的样式“*/
+.btn{
+    width: 50%;
+    background: #D96B66;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius:4px;
+}
+.form-control{
+    color: #8e908d;
+}
+.searchbtn{
+    text-align: center;
+}
+/*媒体查询*/
+@media (max-width: 768px){
+    .reservation{
+        padding: 20px 20px;
+        width: 90%;
+    }
+}
+ /*热卖商品*/
+ .hot h3{
+    margin-top: -20px;
+    color:#1A1A1A;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0 0 1em;
+    padding: 0 0 0.5em;
+    border-bottom: 2px solid #eee;
+}
+.hot p{
+    color:#5fa022;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.8em;
+    margin: 1em 0;
+}
+.hot{
+    padding: 3em 0;
+    border: 1px solid #eee;
+    margin: 0 0;
+}
+.hot h6{
+    color:#C15162;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0.3em 0;
+}
+a.morebtn{
+    display: block;
+    font-size: 1em;
+    color:#FFF;
+    text-decoration: none;  /*去除下划线*/
+    font-weight: 400;
+    background: #D96B66;
+    padding: 10px 18px;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    border-radius: 3px;
+    -weblit-border-radius:3px;
+}
+a.morebtn:hover{
+    background:#5fa022;
+}
+@media(max-width:1024px)
+{
+a.morebtn{
+max-width:410px;/*当窗口小于1024时按钮的最大宽度*/
+}
+}
+/*特色推荐*/
+/*设置左上角图片位置和宽高*/
+.navbar-brand>img{
+    height: auto;
+    width: 250px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+/*设置选项卡菜单的字体颜色*/
+.nav-pills>li>a{
+    color:#8e908d;
+}
+/*设置选项卡菜单鼠标悬停和获取焦点时的背景色和字体颜色*/
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover{
+    color:#fff;
+    background-color: #5A9522;
+}
+    .choose{
+        border:1px solid silver;
+    }
+    /*设置选项卡内容位置*/
+    .tab-content{
+        margin: 5px;
+        text-align: center;/*居中*/
+    }
+    /*轮播广告*/
+    .pic{
+        margin: 0 auto;
+        width: 800px;
+        padding: 20px;
+    }
+    .carousel{
+        background: white;
+    }
+    /*媒体查询：当视口小于992px时缩小了轮播div的宽度，图片换行*/
+    @media(max-width:992px){
+        .pic{
+            width: 415px;
+        }
+    }
+    /*轮播广告结束*/
+    /*footer部分*/
+    .footer p{
+        color: #fff;
+        font-size: 1em;
+        line-height: 1.8em;
+        vertical-align: middle;
+        margin: 0.4em 0;
+    }
+    .footer p a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .footer{
+        padding: 1em 0;
+        background-color: #D96B66;
+    }
+    .footer-right ul{
+        padding: 0;
+    }
+    .footer-right li{
+        display: inline-block;
+        margin: 0 1em;
+    }
+    .footer-left{
+        float: left;
+    }
+    .footer-right{
+        float:right;
+    }
+    /*设置字体图标的大小和颜色*/
+    .glyphicon{
+        font-size: 1.2em;
+        color: #f2f0f1;
+    }

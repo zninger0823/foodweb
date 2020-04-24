@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+ <!--
+            /*（1）导航部分使用BootStrap导航栏完成
+            （2）logo图片放在class="navbar-left"的<div>标签中
+            （3）购物车图片放在class="navbar-right"的<div>标签中
+            (4)其余菜单放在class="navbar-nav"的菜单中
+            .navbar-brand:通过该类设置logo部分图片的宽高位置等
+            .navbar-default、navbar-nav:通过此类设置导航菜单的样式，如鼠标悬停变色的效果等
+            .navbar-right:通过该类设置导航右侧购物车部分的样式*/
+      -->
+<html>
+    <head>
+        <title>餐饮网站header部分</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!--引入Bootstrap-->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <style type="text/css">
+        /*设置body元素字体为Microso YaHei*/
+        body {font-family: Microsoft YaHei;}
+        .head-top{
+            background: #5fa022;
+            padding:0.8em 0;
+        }
+        .navbar-brand{
+            padding: 0 0;
+        }
+        /*设置图片logo的大小和位置*/
+        .navbar-brand>img{
+            height: auto;
+            margin-right: 5px;
+            margin-top: 5px;
+            width: 250px;
+        }
+        /*设置整个导航菜单的内边距、背景色和阴影*/
+        .navbar-default{
+            padding: 1.5em 0;
+            background-color:#f2f0f1 ;
+            box-shadow:12px -5px 39px -12px;
+        }
+        /*设置导航栏中菜单a链接的样式*/
+        .navbar-default .navbar-nav>li a{
+            top:10px;
+            padding:0.5em 3em;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2em;
+            color:#919191;
+        }
+        /*设置导航栏菜单鼠标悬停和获取焦点时的状态*/
+        .navbar-default .navbar-nav>li>a:hover,
+        .navbar-default .navbar-nav>li>a:focus{
+            background: #D96B66;
+            color:white;
+            border-radius: 3px;
+            -webkit-border-radius:3px;
+        }
+        /*设置导航栏右侧a链接（0.00）的颜色*/
+        .navbar-right>a{
+            color:#D96B66;
+
+        }
+        /*媒体查询：当视口小于970px时，导航菜单字体变小，避免了换行的问题*/
+        @media (max-width:970px){
+            .navbar-default .navbar-nav>li a{
+                font-size: 1.1em;
+            }
+        }    
+        </style>    
+    </head>
+    <body>
+        <!--header-->
+    <header>
+        <div class="head-top"></div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="container">
+                <div class="navbar-header">
+                    <!--<div class="log"-->
+                        <a href="#" class="navbar-brand"><img src="images/logo.png" alt=""></a>
+                        <!--</div>-->
+                        <!--当进入最小设备时，导航条将隐藏，显示汉堡按钮，单击时可以切换显示导航条隐藏的信息*data-target:用于确认需要显示的div-->
+                        <button type="button" class="navbar-toggle collapsed"
+                        data-toggle="collapse" data-target="#navbar-collapse"
+                        aria-expanded="false">
+                        <span class="sr-only">汉堡按钮</span>
+                        <sapn class="icon-bar"></sapn>
+                        <sapn class="icon-bar"></sapn>
+                        <sapn class="icon-bar"></sapn>
+                    </button>
+                </div>    
+                    <!--导航链接、表单和其他内容切换-->
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">主页</a></li>
+                            <li><a href="#">餐厅</a></li>
+                            <li><a href="#">健康</a></li>
+                            <li><a href="#">话题</a></li>
+                            <li><a href="#">联系我们</a></li>
+                        </ul>
+                        <div class="navbar-right">
+                            <a href="#"><h3><span>￥0.00<img src="images/bag.png" alt=""></span></h3></a>
+                        </div>
+                    </div>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+        </nav>
+    </header>    
+    <!--header-->
+    <!--jQuery (Bootstrap的JavaScript插件需要引入jQuery)-->
+    <script src="jquery/jquery-1.12.4.min.js"></script>
+    <!--包括所有已经编译的插件-->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+    </html>
